@@ -52,10 +52,10 @@ export const workIndex = [
   },
   {
     num: "03",
-    title: "TryOn",
+    title: "XENO",
     href: "#tryon",
-    desc: "Browser-based virtual try-on driven entirely by hand and face gestures.",
-    tags: "MediaPipe · Python · JS",
+    desc: "Alien hand-tracking interface: a synth, a vision portal, zero-g relics and a creature, all driven by gestures.",
+    tags: "MediaPipe · three.js · WebGL",
   },
   {
     num: "04",
@@ -155,11 +155,12 @@ export const twoUp = [
   {
     id: "tryon",
     kicker: "03 — Computer vision",
-    title: "TryOn",
+    title: "XENO",
     repo: "https://github.com/ApewehRexford/TryOn",
-    media: "Gesture demo GIF",
-    desc: "Virtual try-on that runs entirely in the browser. Pinch to grab and move items, pinch with both hands to resize, open your mouth to switch styles, and flash a peace sign for a countdown selfie.",
-    tags: "MediaPipe · Python · JavaScript",
+    media: "Hand-tracking demo",
+    image: "/projects/xeno-demo.gif",
+    desc: "An alien hand-tracking interface that runs entirely in the browser. Play a synth tuned to a non-human scale, frame a portal with your fingers to see in thermal or x-ray, fling zero-gravity relics into a black hole, and meet a creature whose eye follows your hand.",
+    tags: "MediaPipe · three.js · WebGL · Web Audio",
   },
   {
     id: "cpu-sim",
@@ -196,7 +197,8 @@ export const honors = [
     date: "Jul — Aug 2026 · University of Ghana",
     title: "Top 25",
     body: "GreenRes Hackathon 2026 — Africa Climate Collaborative × Mastercard Foundation. I led the team and the engineering on EcoQuest Africa: a gamified climate-action app where children complete real-world quests to help their village grow, in English, French, Kiswahili, and Hausa.",
-    tags: "Team Lead & Lead Software Engineer · TypeScript · Live demo ↗",
+    tags: "Team Lead & Lead Software Engineer · TypeScript",
+    demo: "https://ecoquest-neon.vercel.app/",
     thumb: "App screen",
     photos: [
       { src: "/honors/greenres-2026-1.jpg", alt: "EcoQuest Africa welcome screen with language choice: English, French, Kiswahili, Hausa" },

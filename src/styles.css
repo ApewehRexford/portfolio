@@ -235,7 +235,8 @@ hr.rule {
 .nav__links a,
 .contact__foot a,
 .two-up__meta a,
-.more a.mono {
+.more a.mono,
+.honors__demo {
   background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
   transition: background-size 0.25s;
 }
@@ -243,7 +244,8 @@ hr.rule {
 .nav__links a:hover,
 .contact__foot a:hover,
 .two-up__meta a:hover,
-.more a.mono:hover {
+.more a.mono:hover,
+.honors__demo:hover {
   background-size: 100% 1px;
 }
 
@@ -841,6 +843,10 @@ hr.rule {
   color: rgba(243, 239, 231, 0.8);
 }
 
+.honors__demo {
+  color: var(--paper);
+}
+
 .honors__award {
   font-size: clamp(52px, 5.83vw, 84px);
   line-height: 0.92;
@@ -862,7 +868,7 @@ hr.rule {
 
 .honors__thumbs {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--thumb-cols, 3), minmax(0, 1fr));
   gap: 12px;
 }
 

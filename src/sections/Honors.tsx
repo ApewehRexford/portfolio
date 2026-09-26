@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { useLightbox } from "../components/Lightbox";
 import { honors } from "../content";
 
@@ -26,9 +27,23 @@ export default function Honors() {
             </div>
             <div className="honors__right">
               <p className="honors__body">{h.body}</p>
-              <p className="mono label-sm honors__soft">{h.tags}</p>
-              <div className="honors__thumbs">
-                {[0, 1, 2].map((i) => {
+              <p className="mono label-sm honors__soft">
+                {h.tags}
+                {h.demo && (
+                  <>
+                    {" · "}
+                    <a href={h.demo} target="_blank" rel="noreferrer" className="honors__demo">
+                      Live demo ↗
+                    </a>
+                  </>
+                )}
+              </p>
+              {/* One slot per real photo; entries without photos keep three placeholders. */}
+              <div
+                className="honors__thumbs"
+                style={{ "--thumb-cols": h.photos?.length || 3 } as CSSProperties}
+              >
+                {Array.from({ length: h.photos?.length || 3 }, (_, i) => i).map((i) => {
                   const photo = h.photos?.[i];
                   return photo ? (
                     <button
