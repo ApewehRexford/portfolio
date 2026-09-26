@@ -29,7 +29,7 @@ export default function Hero() {
             <a href="#work" className="btn btn--solid">
               View selected work&nbsp;&nbsp;→
             </a>
-            <a href={links.cv} className="btn btn--outline hero__cv" download>
+            <a href={links.cv} className="btn btn--outline hero__cv" download={links.cvFileName}>
               Download CV
             </a>
           </div>

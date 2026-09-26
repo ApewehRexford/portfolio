@@ -21,7 +21,7 @@ export default function Contact() {
           <a href={links.linkedin} target="_blank" rel="noreferrer" className="btn btn--outline btn--sm">
             LinkedIn ↗
           </a>
-          <a href={links.cv} download className="btn btn--outline btn--sm">
+          <a href={links.cv} download={links.cvFileName} className="btn btn--outline btn--sm">
             Download CV ↗
           </a>
         </div>

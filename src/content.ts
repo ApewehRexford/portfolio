@@ -4,8 +4,9 @@ export const links = {
   email: "awaregyarexford0@gmail.com",
   github: "https://github.com/ApewehRexford",
   linkedin: "https://www.linkedin.com/in/rexford-apeweh",
-  // Put your CV at public/cv.pdf
-  cv: "/cv.pdf",
+  // The CV lives at public/Apeweh-Rexford-Awaregya-CV.pdf; cvFileName is the name it downloads as.
+  cv: "/Apeweh-Rexford-Awaregya-CV.pdf",
+  cvFileName: "Apeweh-Rexford-Awaregya-CV.pdf",
 };
 
 export const navLinks = [
