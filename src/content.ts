@@ -205,6 +205,18 @@ export const moreBuilds = [
 
 export const honors = [
   {
+    date: "Jul — Oct 2026",
+    title: "3rd Place",
+    body: "Tɛkyerɛma Pa Hackathon 2026. I built Kasapon, a voice-first assistant across mobile, web, and Telegram: users speak naturally to check balances and send money, with no menus or keypad steps, and accessibility built in from the start. I also designed Kasapon Shield, a voice PIN confirmation for the phone payment line that never says the PIN aloud. It uses a letter-to-digit mapping that changes each time.",
+    tags: "Product & Full-Stack Software Engineer · React · TypeScript",
+    thumb: "App screen",
+    photos: [
+      { src: "/honors/kasapon-2026-mobile.jpg", alt: "Kasapon mobile app home screen with a robot assistant, a tap-and-speak mic button, and quick actions like Send money and Pay bill" },
+      { src: "/honors/kasapon-2026-telegram.jpg", alt: "Kasapon Telegram bot replying in Twi to a voice note asking to send 20 cedis" },
+      { src: "/honors/kasapon-2026-web.jpg", alt: "Kasapon web app with the robot assistant, a mic button, and voice actions like Send, Receive, and Top up" },
+    ],
+  },
+  {
     date: "Jul — Aug 2026 · University of Ghana",
     title: "Top 25",
     body: "GreenRes Hackathon 2026 — Africa Climate Collaborative × Mastercard Foundation. I led the team and the engineering on EcoQuest Africa: a gamified climate-action app where children complete real-world quests to help their village grow, in English, French, Kiswahili, and Hausa.",
