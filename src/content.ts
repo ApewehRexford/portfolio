@@ -1,11 +1,21 @@
 // All site copy and links live here — edit this file to update the portfolio.
 
+// The CV is whatever PDF sits in src/assets/cv/ — any filename works. To update it,
+// delete the old PDF and drop the new one in. If several are there, the last one
+// alphabetically wins. It always downloads as cvFileName below.
+const cvFiles = import.meta.glob<string>("./assets/cv/*.pdf", {
+  eager: true,
+  query: "?url",
+  import: "default",
+});
+const cvPaths = Object.keys(cvFiles).sort();
+const cvUrl = cvPaths.length ? cvFiles[cvPaths[cvPaths.length - 1]] : "";
+
 export const links = {
   email: "awaregyarexford0@gmail.com",
   github: "https://github.com/ApewehRexford",
   linkedin: "https://www.linkedin.com/in/rexford-apeweh",
-  // The CV lives at public/Apeweh-Rexford-Awaregya-CV.pdf; cvFileName is the name it downloads as.
-  cv: "/Apeweh-Rexford-Awaregya-CV.pdf",
+  cv: cvUrl,
   cvFileName: "Apeweh-Rexford-Awaregya-CV.pdf",
 };
 
