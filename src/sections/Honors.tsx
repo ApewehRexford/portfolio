@@ -15,7 +15,7 @@ export default function Honors() {
             <em>compete.</em>
           </h2>
           <p className="honors__lede">
-            From robotics arenas to climate tech — I build with teams that compete, and ship
+            From robotics arenas to climate tech and fintech — I build with teams that compete, and ship
             something real under a deadline.
           </p>
         </div>
